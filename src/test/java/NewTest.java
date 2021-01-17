@@ -2,6 +2,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 public class NewTest {
 
 
-    private WebDriver driver = new FirefoxDriver();
+    private WebDriver driver = new HtmlUnitDriver();
     public static String title;
 
     @Test
