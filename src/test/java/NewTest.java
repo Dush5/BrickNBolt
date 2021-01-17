@@ -19,6 +19,7 @@ public class NewTest {
         driver.get("http://www.grofers.com");
         title = driver.getTitle();
         driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MICROSECONDS);
+        System.out.println("test 1 passed");
 
     }
 
@@ -26,12 +27,14 @@ public class NewTest {
     public void testValidate()
     {
         Assert.assertEquals(title,"Online Grocery Store: Buy Online Grocery from India's Best Online Supermarket at Discounted Rates | Grofers");
+        System.out.println("test 2 passed");
     }
 
     @Test
     public void testEnd()
     {
       driver.close();
+        System.out.println("test 3 passed");
     }
 
 }
