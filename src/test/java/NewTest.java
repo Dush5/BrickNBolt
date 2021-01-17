@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class NewTest {
 
 
-    private WebDriver driver = new ChromeDriver();
+    private WebDriver driver = new FirefoxDriver();
     public static String title;
 
     @Test
